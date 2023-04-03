@@ -10,12 +10,12 @@ it is common to sprint towards an MVP version of an application before later imp
 In this exercise you are tasked with improving the quality of an existing application by providing various 
 development workflows as well as a testing strategy.
 
-#There are two ways to complete this assignment:
+### There are two ways to complete this assignment:
 
 - Teams of two developers, working on each other’s applications
 - Solo developers, working on the provided application
 
-#The existing application package must feature:
+### The existing application package must feature:
 
 - A front-end login form connected to an API JWT endpoint
 - A front-end logout button connected to browser storage
@@ -23,14 +23,14 @@ development workflows as well as a testing strategy.
 - A front-end profile page
 - The Noroff API Social Media client works well with this exercise.
 
-#The following workflows/hooks are required:
+### The following workflows/hooks are required:
 
 - Project is configured to run Prettier on commit
 - Project is configured to run ESLint on commit
 - Project default branch is protected, code is versioned and branching conventions have been followed.
 - Project is configured to build and deploy to pages on merge to default branch
 
-#The following project file changes are required:
+### The following project file changes are required:
 - Project readme file is updated to include new configuration information and workflow status badges
 - Deployed project has been checked for 404 errors
 - Any bugs found have been communicated in the Issues tab
@@ -42,7 +42,7 @@ development workflows as well as a testing strategy.
 - The user cannot submit the login form with invalid credentials and is shown a message
 - The user can log out with the logout button
 
-#Important Notes
+### Important Notes
 - Test Failure: 
 In some cases, a well written test will still fail if the project does not meet the expectations. 
 For example, the project may not show user error messages. In this case the test case The user cannot submit 
@@ -72,7 +72,7 @@ Process
 - Make any final changes based on this feedback.
 - Submit a link to the Open Pull Request on Moodle.
 
-#Delivery
+### Delivery
 - Please deliver an open Pull Request from branch workflow into your fork’s default branch.
 - You may open a PR from workflow into the upstream default branch in addition, but this will not be graded.
 - Please post your PR to the peer review forum and provide feedback to your peers when requested.
