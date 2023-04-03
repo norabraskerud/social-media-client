@@ -1,10 +1,10 @@
 # social-media-client
 
-#Goal
+## Goal
 Using the skills and knowledge from this course, improve the quality of a package by establishing helpful workflows 
 that make the development process more efficient.
 
-#Brief
+## Brief
 Although Quality Assurance is a practice we should be concerned with throughout the development cycle, 
 it is common to sprint towards an MVP version of an application before later improving the quality. 
 In this exercise you are tasked with improving the quality of an existing application by providing various 
