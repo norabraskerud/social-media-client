@@ -1,4 +1,6 @@
 {
+
+    
     "env": {
       "browser": true,
       "es2021": true
@@ -31,5 +33,9 @@
       "cypress/no-unnecessary-waiting": "off",
       "no-unused-vars": "off"
     }
+
+    
   }
   
+
+   
