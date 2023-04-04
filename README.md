@@ -1,81 +1,24 @@
-# social-media-client
+# Workflow Course Assignment - Noroff
 
-## Goal
-Using the skills and knowledge from this course, improve the quality of a package by establishing helpful workflows 
-that make the development process more efficient.
+## Setup local development
+1. Clone the repository
+1. Run `npm install` to install all dependencies
+1. Run `npm start` to start the development server 
 
-## Brief
-Although Quality Assurance is a practice we should be concerned with throughout the development cycle, 
-it is common to sprint towards an MVP version of an application before later improving the quality. 
-In this exercise you are tasked with improving the quality of an existing application by providing various 
-development workflows as well as a testing strategy.
+## Configuration and Workflow
 
-### There are two ways to complete this assignment:
+This project is configured to run several quality assurance and deployment tasks on each commit and merge. The following workflows and hooks are currently in place:
 
-- Teams of two developers, working on each other’s applications
-- Solo developers, working on the provided application
+- Prettier: This tool automatically formats and lints code to ensure a consistent style throughout the project. It runs on each commit to ensure that all code is clean and easy to read.
+- ESLint: This tool checks for syntax errors and other issues in JavaScript code. It runs on each commit to catch any issues before they make it into the codebase.
+- Jest: This tool is used for testing. It runs on each commit to ensure that all code is functioning as expected.
+- Deployment to pages: This hook is triggered on each merge to the default branch. It automatically deploys the latest version of the code to the project pages website.
 
-### The existing application package must feature:
+## Status Badges
 
-- A front-end login form connected to an API JWT endpoint
-- A front-end logout button connected to browser storage
-- Front-end CRUD functionality for at least one object type
-- A front-end profile page
-- The Noroff API Social Media client works well with this exercise.
+To help keep track of the status of these workflows and hooks, we have included the following badges in this README file:
 
-### The following workflows/hooks are required:
-
-- Project is configured to run Prettier on commit
-- Project is configured to run ESLint on commit
-- Project default branch is protected, code is versioned and branching conventions have been followed.
-- Project is configured to build and deploy to pages on merge to default branch
-
-### The following project file changes are required:
-- Project readme file is updated to include new configuration information and workflow status badges
-- Deployed project has been checked for 404 errors
-- Any bugs found have been communicated in the Issues tab
-- The following features must be automatically tested with Unit tests:
-- The login function fetches and stores a token in browser storage
-- The logout function clears the token from browser storage
-- The following features must be automatically tested with End-to-End tests:
-- The user can log in and access their profile
-- The user cannot submit the login form with invalid credentials and is shown a message
-- The user can log out with the logout button
-
-### Important Notes
-- Test Failure: 
-In some cases, a well written test will still fail if the project does not meet the expectations. 
-For example, the project may not show user error messages. In this case the test case The user cannot submit 
-the login form with invalid credentials and is shown a message. should fail. Writing tests that always pass is not the purpose of this assignment.
-
-- Issues: 
-While working on another project you may encounter bugs or issues with this project. If a test is failing, 
-create a new Issue to contact the project owner. If you wish to offer a fix for this bug, please do so in a separate Pull Request, 
-for example from the branch worfklow-fixes.
-
-- Formatting Changes: 
-Please do not run prettier/eslint over the project files in your submission branch. 
-This is best done in a separate workflow-formatting branch with it’s own Pull Request to avoid too many changes appearing in the Pull Request. 
-This assignment asks you to setup but not to run prettier/eslint.
-
-Process
-- Find a partner to work with or select the example repository.
-- Fork the project repository to your GitHub account.
-- Create a new branch called workflow.
-- Configure the project with eslint, prettier and commit hooks.
-- Configure the project with GitHub Actions for build/deploy if required.
-- Record any bugs found during this process in the Issues tab.
-- Configure the project for Jest and Cypress.
-- Create tests to cover the required test cases.
-- Create a Pull Request from workflow into the default branch.
-- Request a review from a teacher and/or your peers to help improve your submission.
-- Make any final changes based on this feedback.
-- Submit a link to the Open Pull Request on Moodle.
-
-### Delivery
-- Please deliver an open Pull Request from branch workflow into your fork’s default branch.
-- You may open a PR from workflow into the upstream default branch in addition, but this will not be graded.
-- Please post your PR to the peer review forum and provide feedback to your peers when requested.
-- If you would like a teacher review please request this at least 5 days before the deadline.
-- You must complete the course evaluation to unlock delivery.
-
+- Prettier: [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
+- ESLint: [![ESLint: Enabled](https://img.shields.io/badge/ESLint-Enabled-blue.svg)](https://eslint.org/)
+- Jest: [![Jest: Tested](https://img.shields.io/badge/Jest-Tested-green.svg)](https://jestjs.io/)
+- Deployment to pages: [![Deployment: Pages](https://img.shields.io/badge/Deployment-Pages-orange.svg)](https://pages.github.com/)
