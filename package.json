@@ -40,6 +40,8 @@
   },
   "dependencies": {
     "@testing-library/cypress": "^9.0.0",
-    "bootstrap-dark-5": "^1.1.3"
+    "bootstrap-dark-5": "^1.1.3",
+    "human-signals": "^4.3.0",
+    "jest-localstorage-mock": "^2.4.26"
   }
 }
